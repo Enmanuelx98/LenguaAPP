@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.*;
 import java.nio.file.Files;
+import java.util.HashMap;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/models")
@@ -43,8 +45,9 @@ public class Modelcontroller {
                 .body(resource);
     }
     @GetMapping("/mensaje")
-    public ResponseEntity<String> getMensaje() {
-        return ResponseEntity.ok("Hola desde el backend");
+    public Map<String, String> mensaje() {
+        Map<String, String> response = new HashMap<>();
+        response.put("mensaje", "Hola desde el backend");
+        return response;
     }
-
 }

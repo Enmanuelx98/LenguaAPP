@@ -60,7 +60,10 @@ public class WebSecurityConfig {
         httpSecurity
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(req -> req
-                        .requestMatchers("/swagger-ui/**", "/v3/api-docs/**","/login").permitAll()
+                        .requestMatchers("/swagger-ui/**", "/v3/api-docs/**","/user/insertaruser/{role}","/user/cambioclave","/rol/listrole",
+                                "/rol/list","user/buscarnombre/{username}","/usuariocursos/agregarusercurso","/usuariocursos/listcursousuario/{usuarioId}",
+                                "/cursos/listcurso","/models/mensajeLSP","/models/mensajeASL","/models/imagenes","/models/imagenes/count",
+                                "/usuariocursos/listcursoshabilitados/{userId}/{tipolengua}","/usuariocursos/listcursosplease/{userId}/{tipolengua}","cursos/listcursotipolengua/{tipolengua}","/login").permitAll()
                         .anyRequest().authenticated()
                 )
                 .httpBasic(Customizer.withDefaults())

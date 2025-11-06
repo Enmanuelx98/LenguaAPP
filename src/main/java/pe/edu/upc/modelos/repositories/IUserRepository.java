@@ -12,16 +12,12 @@ import pe.edu.upc.modelos.entiities.Users;
 @Repository
 public interface IUserRepository extends JpaRepository<Users, Long> {
     public Users findOneByUsername(String username);
-
-    //BUSCAR POR NOMBRE
-    @Query("select count(u.username) from Users u where u.username =:username")
-    public int buscarUsername(@Param("username") String nombre);
-
+    public Users findOneByEmail(String email);
 
     //INSERTAR ROLES
     @Transactional
     @Modifying
     @Query(value = "insert into roles (rol, user_id) VALUES (:rol, :user_id)", nativeQuery = true)
-    public void insRol(@Param("rol") String authority, @Param("user_id") Long user_id);
+    public void insRol(@Param("rol") String role, @Param("user_id") Long user_id);
 
 }

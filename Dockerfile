@@ -4,8 +4,8 @@ WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests
 
-# Etapa 2: Imagen final
-FROM openjdk:17-jdk-slim
+# Etapa 2: Imagen final (ligera y estable)
+FROM eclipse-temurin:17-jdk-jammy
 WORKDIR /app
 COPY --from=build /app/target/backend.jar /backend.jar
 ENTRYPOINT ["java", "-jar", "/backend.jar"]

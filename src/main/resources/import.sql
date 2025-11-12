@@ -41,11 +41,11 @@ INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES 
 INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('Bye', 'Please', 'Thank you', 'You are welcome', 12);
 INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('Good', 'Bad', 'So so', 'How are you', 4);
 INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('Happy', 'Sad', 'Angry', 'Tired', 14);
-INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('I', 'You', 'Name', 'Age', 6);
+INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('Me', 'You', 'Name', 'Age', 6);
 INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('Friend', 'Family', 'Job', 'Teacher', 16);
 INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('Home', 'Study', 'Where', 'Eat', 8);
 INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('Sleep', 'Walk', 'School', 'Bathroom', 18);
-INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('No', 'Which', 'Yes', 'Maybe', 10);
+INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('Nou', 'Which', 'Yes', 'Maybe', 10);
 INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('What', 'Who', 'When', 'Why', 20);
 
 INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Hola', 'Buenos dias', 'Buenas noches', 'Hola', 'Gracias', 'Hola', 1);
@@ -113,10 +113,10 @@ INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, 
 INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Angry', 'Tired', 'Angry', 'Sad', 'Happy', 'Angry', 14);
 INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Tired', 'Tired', 'Angry', 'Sad', 'Happy', 'Tired', 14);
 
-INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('I', 'You', 'Name', 'Age', 'I', 'I', 6);
+INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Me', 'You', 'Name', 'Age', 'Me', 'Me', 6);
 INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('You', 'You', 'Name', 'Friend', 'Family', 'You', 6);
 INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Name', 'Name', 'Age', 'Job', 'Teacher', 'Name', 6);
-INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Age', 'I', 'Age', 'Friend', 'Family', 'Age', 6);
+INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Age', 'Me', 'Age', 'Friend', 'Family', 'Age', 6);
 INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Friend', 'Friend', 'Family', 'Job', 'Teacher', 'Friend', 16);
 INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Family', 'Family', 'Friend', 'Job', 'Teacher', 'Family', 16);
 INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Job', 'Teacher', 'Family', 'Job', 'Friend', 'Job', 16);
@@ -131,14 +131,14 @@ INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, 
 INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('School', 'Sleep', 'Bathroom', 'Walk', 'School', 'School', 18);
 INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Bathroom', 'Bathroom', 'House', 'Eat', 'Study', 'Bathroom', 18);
 
-INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('No', 'Yes', 'No', 'Which', 'Maybe', 'No', 10);
-INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Which', 'Which', 'Yes', 'No', 'Why', 'Which', 10);
-INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Yes', 'Maybe', 'Why', 'No', 'Yes', 'Yes', 10);
+INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('No ', 'Yes', 'No ', 'Which', 'Maybe', 'No ', 10);
+INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Which', 'Which', 'Yes', 'No ', 'Why', 'Which', 10);
+INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Yes', 'Maybe', 'Why', 'No ', 'Yes', 'Yes', 10);
 INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Maybe', 'Which', 'Maybe', 'Why', 'Yes', 'Maybe', 10);
 INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('What', 'Who', 'What', 'When', 'Why', 'What', 20);
-INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Who', 'Why', 'Who', 'Which', 'No', 'Who', 20);
+INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Who', 'Why', 'Who', 'Which', 'No ', 'Who', 20);
 INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('When', 'When', 'Maybe', 'Why', 'Which', 'When', 20);
-INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Why', 'Why', 'What', 'No', 'Who', 'Why', 20);
+INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Why', 'Why', 'What', 'No ', 'Who', 'Why', 20);
 
 INSERT INTO alfabeto (letra, tipolengua) VALUES ('A', 'LSP');
 INSERT INTO alfabeto (letra, tipolengua) VALUES ('B', 'LSP');

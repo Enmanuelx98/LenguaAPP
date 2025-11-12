@@ -45,7 +45,7 @@ INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES 
 INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('Friend', 'Family', 'Job', 'Teacher', 16);
 INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('Home', 'Study', 'Where', 'Eat', 8);
 INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('Sleep', 'Walk', 'School', 'Bathroom', 18);
-INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('Nou', 'Which', 'Yes', 'Maybe', 10);
+INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('No ', 'Which', 'Yes', 'Maybe', 10);
 INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('What', 'Who', 'When', 'Why', 20);
 
 INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Hola', 'Buenos dias', 'Buenas noches', 'Hola', 'Gracias', 'Hola', 1);

@@ -8,4 +8,5 @@ RUN mvn clean package -DskipTests
 FROM eclipse-temurin:17-jdk-jammy
 WORKDIR /app
 COPY --from=build /app/target/backend.jar /backend.jar
+COPY src/main/resources/ImagenesCursos/ImagenesTodo /app/imagenes
 ENTRYPOINT ["java", "-jar", "/backend.jar"]

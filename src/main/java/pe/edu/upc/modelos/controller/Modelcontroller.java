@@ -73,7 +73,8 @@ public class Modelcontroller {
     //cantidad de imagenes en la carpeta
     @GetMapping("/imagenes/count")
     public ResponseEntity<Integer> contarImagenes() {
-        File carpeta = new File("src/main/resources/ImagenesCursos/ImagenesTodo");
+        //File carpeta = new File("src/main/resources/ImagenesCursos/ImagenesTodo");
+        File carpeta = new File("/app/imagenes");
 
         // Verifica si la carpeta existe y es válida
         if (!carpeta.exists() || !carpeta.isDirectory()) {

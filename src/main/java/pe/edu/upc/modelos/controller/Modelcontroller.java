@@ -19,39 +19,17 @@ import java.io.IOException;
 @RequestMapping("/models")
 public class Modelcontroller {
 
-    @GetMapping("/{type}")
-    public ResponseEntity<Resource> getModelByType(@PathVariable String type) throws IOException {
-        String filename;
-        if (type.equals("tflite")) {
-            filename = "models/asl_modelov2_pruebav2.tflite";
-        } else if (type.equals("json")) {
-            filename = "models/asl_labels_modelov2_pruebav2.json";
-        } else {
-            return ResponseEntity.badRequest().build();
-        }
-
-        ClassPathResource resource = new ClassPathResource(filename);
-        if (!resource.exists()) {
-            return ResponseEntity.notFound().build();
-        }
-
-        return ResponseEntity.ok()
-                .contentType(MediaType.APPLICATION_OCTET_STREAM)
-                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + resource.getFilename() + "\"")
-                .body(resource);
-    }
-
     //Palabras que poseen los modelos
     @GetMapping("/mensajeLSP")
     public Map<String, String> mensajeLSP() {
         Map<String, String> response = new HashMap<>();
-        response.put("mensaje", "hola, buenos días, buenas noches, por favor, adiós, disculpa, gracias, cómo estás, te quiero, mañana, tarde, noche, comer, beber, estudiar, trabajar, familia, amigo, casa");
+        response.put("mensaje", "a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, buenos dias, hola, por favor, gracias, bien, buenas noches, buenas tardes, cual, de nada, mal, mas o menos, nombre, tu, yo, casa, estudiar, edad, no, chau, donde");
         return response;
     }
     @GetMapping("/mensajeASL")
     public Map<String, String> mensajeASL() {
         Map<String, String> response = new HashMap<>();
-        response.put("mensaje", "hello, good morning, good night, please, goodbye, sorry, thank you, how are you, I love you, tomorrow, afternoon, night, eat, drink, study, work, family, friend, home, ");
+        response.put("mensaje", "a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, good morning, hello, please, thanks you, fine, good night, good afternoon, which, you are welcome, bad, so so, name, you, me, home, study, age, no, goodbye, where");
         return response;
     }
 

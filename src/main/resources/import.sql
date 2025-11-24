@@ -39,7 +39,7 @@ INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES 
 
 INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('Hello', 'Good morning', 'Good afternoon', 'Good night', 2);
 INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('Bye', 'Please', 'Thank you', 'You are welcome', 12);
-INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('Good', 'Bad', 'So so', 'How are you', 4);
+INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('Fine', 'Bad', 'So so', 'How are you', 4);
 INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('Happy', 'Sad', 'Annoying', 'Tired', 14);
 INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('Me', 'You', 'Name', 'Age', 6);
 INSERT INTO palabras (palabra1, palabra2, palabra3, palabra4, cursos_id) VALUES ('Friend', 'Family', 'Dad', 'Teacher', 16);
@@ -104,12 +104,12 @@ INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, 
 INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Thank you', 'Bye', 'Thank you', 'Please', 'Hello', 'Thank you', 12);
 INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('You are welcome', 'You are welcome', 'Please', 'Thank you', 'Good night', 'You are welcome', 12);
 
-INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Good', 'Good', 'So so', 'Bad', 'How are you', 'Good', 4);
-INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Bad', 'Bad', 'Good', 'So so', 'Tired', 'Bad', 4);
-INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('So so', 'So so', 'Good', 'Sad', 'How are you', 'So so', 4);
+INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Fine', 'Fine', 'So so', 'Bad', 'How are you', 'Fine', 4);
+INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Bad', 'Bad', 'Fine', 'So so', 'Tired', 'Bad', 4);
+INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('So so', 'So so', 'Fine', 'Sad', 'How are you', 'So so', 4);
 INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('How are you', 'Happy', 'How are you', 'Sad', 'Tired', 'How are you', 4);
 INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Happy', 'Happy', 'Sad', 'Annoying', 'Tired', 'Happy', 14);
-INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Sad', 'Sad', 'Annoying', 'Good', 'So so', 'Sad', 14);
+INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Sad', 'Sad', 'Annoying', 'Fine', 'So so', 'Sad', 14);
 INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Annoying', 'Tired', 'Annoying', 'Sad', 'Happy', 'Annoying', 14);
 INSERT INTO pregunta (pregunta, respuesta1, respuesta2, respuesta3, respuesta4, respuestaverdad, cursos_id) VALUES ('Tired', 'Tired', 'Annoying', 'Sad', 'Happy', 'Tired', 14);
 

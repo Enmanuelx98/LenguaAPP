@@ -39,7 +39,9 @@ public class serviceimplevaloraciones implements serviceintervaloraciones {
         if (cantidad == null || cantidad == 0) {
             return 0.0;
         }
-        return (double) suma / cantidad;
+        double promedio = (double) suma / cantidad;
+
+        return Math.round(promedio * 10.0) / 10.0;
     }
 
     @Override
@@ -50,7 +52,9 @@ public class serviceimplevaloraciones implements serviceintervaloraciones {
         if (cantidad == null || cantidad == 0) {
             return 0.0;
         }
-        return (double) suma / cantidad;
+        double promedio = (double) suma / cantidad;
+
+        return Math.round(promedio * 10.0) / 10.0;
     }
 
     @Override

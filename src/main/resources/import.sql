@@ -1,8 +1,11 @@
-INSERT INTO users (username, password, enabled, email) VALUES ('admin', '$2a$12$HiVZzilA7cp05vflCtRrOOdC.tno3RPARhLDKJm5xn5ie2xF9qeEa',true, 'admin@gmail.com');
+INSERT INTO users (username, password, enabled, email) VALUES ('admin', '$2a$12$sMCmP0o.apfjIFnl/qZS0usNErlWGbv1wub65cg42KPVzQxYCSd3C',true, 'admin@gmail.com');
 INSERT INTO roles (rol, user_id) VALUES ('ADMIN', 1);
 
-INSERT INTO users (username, password, enabled, email) VALUES ('user', '$2a$12$hKua71N0EtJxvOrrwBgm2u/GiOCBM5XKJPdGkCsHKB7LFtQezbRxi',true, 'user@gmail.com');
+INSERT INTO users (username, password, enabled, email) VALUES ('estudiante', '$2a$12$z2g4Vk568MLWxTvd9TNYPOopeJ109i8l4ZkeezN71b6Tns4dMfUKm',true, 'estudiante1@gmail.com');
 INSERT INTO roles (rol, user_id) VALUES ('ESTUDIANTE', 2);
+
+INSERT INTO users (username, password, enabled, email) VALUES ('docente', '$2a$12$.jmeNcpG6WqgP1eIh5wQL.Y17mWvRmJi9/3StJXrhVDUziN/ocWeC',true, 'docente@gmail.com');
+INSERT INTO roles (rol, user_id) VALUES ('DOCENTE', 3);
 
 INSERT INTO cursos (nombre, descripcion, objetivos, tipolengua) VALUES ('Saludos 1','Aprender a saludar correctamente es fundamental para establecer una interacción respetuosa y cercana, además de fomentar el reconocimiento cultural de la comunidad sorda en el Perú.','Objetivos del curso:'|| CHR(10) ||'-Familiarizar a los usuarios con los saludos básicos en LSP.'|| CHR(10) ||'-Desarrollar habilidades para reconocer y reproducir los gestos de los saludos en LSP.'|| CHR(10) ||'-Promover la sensibilización y el respeto hacia la cultura sorda.','LSP');
 INSERT INTO cursos (nombre, descripcion, objetivos, tipolengua) VALUES ('Saludos 1','Aprender a saludar correctamente es esencial para construir interacciones respetuosas y amables, además de promover la comprensión cultural y la inclusión dentro de la comunidad sorda estadounidense.','Objetivos del curso:' || CHR(10) || '-Familiarizar a los usuarios con los saludos básicos en ASL.' || CHR(10) || '-Desarrollar la habilidad de reconocer y realizar los saludos en ASL con precisión.' || CHR(10) || '-Fomentar el respeto y la conciencia hacia la cultura sorda y sus formas de comunicación.','ASL');

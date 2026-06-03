@@ -7,7 +7,7 @@ public class Insignias {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(length = 30)
+    @Column(length = 200)
     private String nombre;
 
     @ManyToOne

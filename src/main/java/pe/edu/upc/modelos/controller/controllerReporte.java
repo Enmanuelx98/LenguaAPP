@@ -37,14 +37,14 @@ public class controllerReporte {
     }
     //delete
     @DeleteMapping("/eliminarreporte/{id}")
-    @PreAuthorize("hasAnyAuthority('ADMIN','ESTUDIANTE','DOCENTE')")
+    @PreAuthorize("hasAuthority('ADMIN')")
     public void eliminarreporte(@PathVariable("id") Long id) {
         serviceinterreportes.eliminarReporte(id);
     }
 
     //Listar
     @GetMapping("/listreporte")
-    @PreAuthorize("hasAnyAuthority('ADMIN','ESTUDIANTE','DOCENTE')")
+    @PreAuthorize("hasAuthority('ADMIN')")
     public List<ReportesDTO> Listreporte() {
         return serviceinterreportes.listarReporte().stream().map(x -> {
             ModelMapper m = new ModelMapper();

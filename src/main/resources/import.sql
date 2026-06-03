@@ -7,6 +7,12 @@ INSERT INTO roles (rol, user_id) VALUES ('ESTUDIANTE', 2);
 INSERT INTO users (username, password, enabled, email) VALUES ('docente', '$2a$12$.jmeNcpG6WqgP1eIh5wQL.Y17mWvRmJi9/3StJXrhVDUziN/ocWeC',true, 'docente@gmail.com');
 INSERT INTO roles (rol, user_id) VALUES ('DOCENTE', 3);
 
+INSERT INTO users (username, password, enabled, email) VALUES ('admin2', '$2a$12$jdN./f.33Fa7wRmDqrYy5OkkO.6wjjTe0erpum/ZhI/vWhOBDwGAu',true, 'admin2@gmail.com');
+INSERT INTO roles (rol, user_id) VALUES ('ESTUDIANTE', 4);
+
+INSERT INTO users (username, password, enabled, email) VALUES ('admin3', '$2a$12$.5d6s42gUezMq.cQ4XLzFej5EEC8tF2n2MzDKDo9AQkvcr/n20PkW',true, 'admin3@gmail.com');
+INSERT INTO roles (rol, user_id) VALUES ('ADMIN', 5);
+
 INSERT INTO cursos (nombre, descripcion, objetivos, tipolengua) VALUES ('Saludos 1','Aprender a saludar correctamente es fundamental para establecer una interacción respetuosa y cercana, además de fomentar el reconocimiento cultural de la comunidad sorda en el Perú.','Objetivos del curso:'|| CHR(10) ||'-Familiarizar a los usuarios con los saludos básicos en LSP.'|| CHR(10) ||'-Desarrollar habilidades para reconocer y reproducir los gestos de los saludos en LSP.'|| CHR(10) ||'-Promover la sensibilización y el respeto hacia la cultura sorda.','LSP');
 INSERT INTO cursos (nombre, descripcion, objetivos, tipolengua) VALUES ('Saludos 1','Aprender a saludar correctamente es esencial para construir interacciones respetuosas y amables, además de promover la comprensión cultural y la inclusión dentro de la comunidad sorda estadounidense.','Objetivos del curso:' || CHR(10) || '-Familiarizar a los usuarios con los saludos básicos en ASL.' || CHR(10) || '-Desarrollar la habilidad de reconocer y realizar los saludos en ASL con precisión.' || CHR(10) || '-Fomentar el respeto y la conciencia hacia la cultura sorda y sus formas de comunicación.','ASL');
 INSERT INTO cursos (nombre, descripcion, objetivos, tipolengua) VALUES ('Estados y emociones 1','Reconocer y expresar emociones en lengua de señas es esencial para una comunicación empática y auténtica. Este curso busca fortalecer la comprensión emocional y la expresión de sentimientos en diferentes contextos cotidianos.','Objetivos del curso:' || CHR(10) || '-Enseñar las señas correspondientes a los estados emocionales más comunes.' || CHR(10) || '-Fomentar la empatía y la inteligencia emocional en la comunicación con personas sordas.' || CHR(10) || '-Desarrollar la capacidad de identificar y expresar emociones de manera efectiva.','LSP');
